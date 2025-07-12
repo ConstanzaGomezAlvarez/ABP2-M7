@@ -20,13 +20,16 @@
     <nav class="navbar">
       <ul class="navbar__menu">
         <li class="navbar__item">
-          <a class="navbar__link" href="#inicio">Inicio</a>
+          <a class="navbar__link" href="#hero">Inicio</a>
         </li>
         <li class="navbar__item">
           <a class="navbar__link" href="catalogo.html">Catálogo</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link" href="#novedades">Novedades</a>
+          <a class="navbar__link" href="./ficha.html">Fichas</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="#news">Novedades</a>
         </li>
         <li class="navbar__item">
           <a class="navbar__link" href="aboutus.html">Nosotros</a>
@@ -35,7 +38,7 @@
     </nav>
     <!--fin navbar-->
     <!--hero seccion-->
-    <section class="hero">
+    <section class="hero" id="hero">
       <img src="./assets/img/libros.png" alt="books logo" class="hero__logo">
       <h1 class="hero__title">Te Lo Vendo</h1>
       <p class="hero__description">
@@ -44,10 +47,10 @@
         de usar, segura y pensada para que vivas la mejor experiencia de compra literaria.
       </p>
       <div class="hero__buttons">
-        <a class="hero__button" href="#contacto">
+        <a class="generic-btn" href="#contacto">
           Contacto
         </a>
-        <a class="hero__button" href="./aboutus.html">
+        <a class="generic-btn" href="./aboutus.html">
           Sobre Nosotros
         </a>
       </div>
@@ -70,7 +73,8 @@
           <h3 class="news__card__content--title">Saga Empireo</h3>
           <p class="news__card__content--autor">Rebecca Yarros</p>
           <p class="news__card__content--description">Categoría: Fantasia</p>
-          <a href="./ficha.html" class="news__card__content--button">Más información</a>
+          <button onclick="location.href='./ficha.html'" type="button" class="generic-btn">
+            Más información</button>
         </div>
       </article>
     </section>
@@ -85,7 +89,7 @@
           <input class="contact__form--input" type="text" id="surname" name="surname" required>
           <label class="contact__form--label" for="message">Mensaje</label>
           <textarea class="contact__form--textarea" id="message" name="message" required></textarea>
-          <button class="contact__button" type="submit">Enviar</button>
+          <button class="generic-btn" type="submit">Enviar</button>
         </form>
       </div>
     </section>
@@ -97,7 +101,7 @@
       <p class="footer__texto">Síguenos en redes sociales</p>
       <ul class="footer__redes">
         <li class="footer__item">
-          <a href="https://www.instagram.com/uandresbello/?hl=es" target="_blank">
+          <a title="link instagram" href="https://www.instagram.com/uandresbello/?hl=es" target="_blank" rel="noopener">
 
             <p>&copy 2025 Te lo Vendo</p>
   </footer>

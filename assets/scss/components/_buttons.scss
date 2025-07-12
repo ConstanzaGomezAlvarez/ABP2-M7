@@ -1,8 +1,8 @@
 // _buttons.scss
+@use "../abstracts/variables";
 
-
-.btn-agregar{
-  background-color: #4CAF50; 
+.btn-agregar {
+  background-color: #4CAF50;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -11,5 +11,21 @@
   justify-content: center;
   align-items: center;
   margin-left: 30%;
-} 
+}
 
+.generic-btn {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  border: 0;
+  color: variables.$color-black;
+  background-color: variables.$third-color;
+
+  &:hover {
+    background-color: variables.$first-color;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
