@@ -4,6 +4,9 @@
 .navbar {
     padding: 1rem;
     background-color: variables.$first-color;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
 
     &__menu {
         display: flex;

@@ -1,9 +1,51 @@
-// _footer.scss
 @use "../abstracts/_variables.scss";
 
+
 .footer {
-    background-color: variables.$first-color;
-    text-align: center;
-    font-weight: bold;
-    padding: 2rem;
+    background-color: #d5e5d5;
+    padding: 16px 32px;
+    width: 100%;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    &__copy {
+        font-size: 14px;
+        color: #333;
+        text-align: right;
+    }
+
+    &__redes {
+        list-style: none;
+        display: flex;
+        gap: 16px;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icono {
+        width: 28px;
+        height: 28px;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__texto {
+        display: none;
+    }
 }
