@@ -2,43 +2,54 @@
 @use "../abstracts/variables";
 
 .navbar {
-    padding: 1rem;
-    background-color: variables.$first-color;
-    position: sticky;
-    top: 0;
-    overflow: hidden;
+  background-color: variables.$first-color;
+  padding: 1rem;
 
-    &__menu {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        list-style: none;
-        padding: 0;
-        justify-content: end;
+  .navbar-brand {
+    color: variables.$color-black;
+    font-weight: bold;
+    font-size: 1.25rem;
+
+    &:hover {
+      color: variables.$third-color;
     }
+  }
 
-    &__item {
-        font-size: 1rem;
+  .navbar-toggler {
+    border: none;
+    &:focus {
+      box-shadow: none;
     }
+  }
 
-    &__link {
+  .navbar-nav {
+    gap: 1rem;
+    margin-left: auto; // alinea a la derecha
+
+    .nav-item {
+      font-size: 1rem;
+
+      .nav-link {
         padding: 0.5rem 1rem;
-        text-decoration: none;
         border-radius: 20px;
         background-color: variables.$second-color;
         color: variables.$color-black;
+        text-decoration: none;
 
         &:hover {
-            background-color: variables.$third-color;
-            color: black;
-            transition: background-color 0.3s ease;
-            cursor: pointer;
+          background-color: variables.$third-color;
+          color: black;
+          transition: background-color 0.3s ease;
+          cursor: pointer;
         }
+      }
     }
+  }
 }
 
 .navbar__ficha {
-    position: fixed;
-    top: 0;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030; // para estar encima del contenido
 }
