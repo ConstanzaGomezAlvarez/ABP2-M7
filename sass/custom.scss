@@ -1,0 +1,64 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.bg-1 {
+    background-color: #adb2d4 !important;
+}
+
+.bg-2 {
+    background-color: #c7d9dd !important;
+}
+
+.bg-3 {
+    background-color: #d5e5d5 !important;
+}
+
+.bg-4 {
+    background-color: #eef1da !important;
+}
+
+//seccion index
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1200;
+
+    &-collapse {
+        justify-content: flex-end;
+    }
+}
+
+.nav-item {
+    padding: 0 0.5rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #c7d9dd;
+    color: #000000;
+
+    &:hover {
+        background-color: #d5e5d5;
+        color: black;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        border-color: #d5e5d5;
+    }
+}
+
+.btn-primary {
+    border-radius: 20px;
+    color: #000000;
+    border: 0;
+
+    &:hover {
+        color: #000000;
+        background-color: #d5e5d5 !important;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+}
+
+.hero {
+    margin: 0 !important;
+}
+
+//fin seccion index
