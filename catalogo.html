@@ -11,224 +11,271 @@
     integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEaU3lf5zNUv5N9d9wGciY40cU9fWv" crossorigin="anonymous">
 
   <!-- Estilo personalizado -->
-  <link rel="stylesheet" href="./sass/custom.css">
-  <link rel="stylesheet" href="./assets/style/main.css" />
+  <link rel="stylesheet" href="./assets/style/custom.css">
 </head>
 
-<body>
-   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-3">
-  <div class="container-fluid">
-    <!-- Marca o logo -->
-    <a class="navbar-brand fw-bold text-uppercase" href="#">TeLoVendo</a>
+<body class="bg-3">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-3 bg-1">
+    <div class="container-fluid">
+      <!-- Marca o logo -->
+      <a class="navbar-brand fw-bold text-uppercase" href="#">TeLoVendo</a>
 
-    <!-- Botón hamburguesa para móviles y tablets -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Mostrar navegación">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Botón hamburguesa para móviles y tablets -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Mostrar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Menú colapsable -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./catalogo.html">Catálogo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./ficha.html">Fichas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./index.html#news">Novedades</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./aboutus.html">Nosotros</a>
-        </li>
-      </ul>
+      <!-- Menú colapsable -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./catalogo.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./ficha.html">Fichas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#news">Novedades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./aboutus.html">Nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--fin navbar-->
+  <!--titulo hero-->
+  <div class="container my-5 bg-2">
+    <div class="p-5 text-center">
+      <h1 class="text-body-emphasis">Catalogo Te Lo Vendo</h1>
+      <p class="lead">
+      </p>
     </div>
   </div>
-</nav>
-  <!--fin navbar-->
-
-  <div class="header">
-    <h1 class="header__catalogo" id="catalogo-header">CATÁLOGO
-      <p class="header__bajada">TE LO VENDO</p>
-    </h1>
+  <!--fin titulo hero-->
+  <!--catalogo-->
+  <div class="container-fluid text-center catalogo my-5">
+    <div class="row row-cols-md-3 row-cols-lg-4 g-4">
+      <div class="col-md-4">
+        <div class="card h-100 bg-2">
+          <img src="https://m.media-amazon.com/images/I/81-9li0FuwL._SL1500_.jpg" class="card-img-top"
+            alt="Guardían entre el centeno">
+          <div class="card-body">
+            <h5 class="card-title">El guardián entre el centeno</h5>
+            <h6 class="card-subtitle mb-2 text-muted">J.D. Salinger</h6>
+            <p class="card-text">
+              La historia de Holden Caulfield, un joven que narra sus experiencias y conflictos tras ser expulsado de su
+              escuela.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-primary w-100 bg-1">Agregar libro</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 bg-2">
+          <img src="https://u-mercari-images.mercdn.net/photos/m30412987278_2.jpg" class="card-img-top"
+            alt="Fight Club">
+          <div class="card-body">
+            <h5 class="card-title">Fight club</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Chuck Palahniuk</h6>
+            <p class="card-text">
+              Un hombre insomne y desencantado funda un club secreto de peleas como forma de rebelión contra la sociedad
+              moderna.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-primary w-100 bg-1">Agregar libro</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 bg-2">
+          <img src="https://m.media-amazon.com/images/I/810RavjOUrL._SL1500_.jpg" class="card-img-top"
+            alt="El hombre y sus símbolos">
+          <div class="card-body">
+            <h5 class="card-title">El hombre y sus símbolos</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Carl Gustav Jung</h6>
+            <p class="card-text">
+              Una introducción accesible a la psicología de los símbolos y el inconsciente, escrita por Jung y sus
+              colaboradores.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-primary w-100 bg-1">Agregar libro</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 bg-2">
+          <img src="https://pictures.abebooks.com/inventory/30188708710.jpg" class="card-img-top"
+            alt="El arte de la guerra">
+          <div class="card-body">
+            <h5 class="card-title">El arte de la guerra</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Sun Tzu</h6>
+            <p class="card-text">
+              Antiguo tratado chino sobre estrategia militar y tácticas aplicables también a la vida y los negocios.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-primary w-100 bg-1">Agregar libro</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 bg-2">
+          <img
+            src="https://static.zarahome.net/assets/public/795b/018f/e8344b7588b6/321d1d6df0e8/48635052999-a7/48635052999-a7.jpg?ts=1731677199220&f=auto&w=819"
+            class="card-img-top" alt="El principito">
+          <div class="card-body">
+            <h5 class="card-title">El principito</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Antoine de Saint-Exupéry</h6>
+            <p class="card-text">
+              Un cuento poético sobre un pequeño príncipe que viaja por distintos planetas y reflexiona sobre la vida y
+              la amistad.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-primary w-100 bg-1">Agregar libro</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 bg-2">
+          <img src="https://cloud10.todocoleccion.online/libros-segunda-mano/tc/2021/05/05/20/261273695.webp"
+            class="card-img-top" alt="El alquimista">
+          <div class="card-body">
+            <h5 class="card-title">El alquimista</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Paulo Coelho</h6>
+            <p class="card-text">
+              La travesía de Santiago, un joven pastor andaluz, en busca de su leyenda personal y el significado de sus
+              sueños.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-primary w-100 bg-1">Agregar libro</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 bg-2">
+          <img
+            src="https://www.megalibros.cl/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/a/l/alas_de_sangre.jpg"
+            class="card-img-top" alt="Alas de sangre">
+          <div class="card-body">
+            <h5 class="card-title">Alas de sangre</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Rebecca Yarros</h6>
+            <p class="card-text">
+              Una joven debe sobrevivir a una brutal academia militar de jinetes de dragones, enfrentando desafíos,
+              traiciones y secretos.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-primary w-100 bg-1">Agregar libro</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 bg-2">
+          <img src="https://damemimanga.cl/sitio-web/wp-content/uploads/2025/01/foto-tienda-2025-01-27T183931.107.jpg"
+            class="card-img-top" alt="Alas de hierro">
+          <div class="card-body">
+            <h5 class="card-title">Alas de hierro</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Rebecca Yarros</h6>
+            <p class="card-text">
+              Secuela de "Alas de sangre", sigue a Violet en su lucha por sobrevivir y descubrir la verdad en la
+              academia.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-primary w-100 bg-1">Agregar libro</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 bg-2">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_885550-MLV81920527160_012025-F.webp" class="card-img-top"
+            alt="Alas de ónix">
+          <div class="card-body">
+            <h5 class="card-title">Alas de ónix</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Rebecca Yarros</h6>
+            <p class="card-text">
+              Continuación de la saga de jinetes, retos y traiciones en la academia de dragones.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-primary w-100 bg-1">Agregar libro</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 bg-2">
+          <img
+            src="https://www.contalles.es/wp-content/uploads/2024/03/una-corte-de-rosas-y-espinas-ed-especial-contalles-benidorm.jpg"
+            class="card-img-top" alt="Una corte de rosas y espinas">
+          <div class="card-body">
+            <h5 class="card-title">Una corte de rosas y espinas</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Sarah J. Maas</h6>
+            <p class="card-text">
+              El primer libro de la saga: Feyre mata a un lobo y debe pagar con su libertad ante un alto fae.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-primary w-100 bg-1">Agregar libro</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 bg-2">
+          <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/19/4b/194bdcb66deb24d793e4b85cd8d3a5bf.jpg"
+            class="card-img-top" alt="Una corte de niebla y furia">
+          <div class="card-body">
+            <h5 class="card-title">Una corte de niebla y furia</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Sarah J. Maas</h6>
+            <p class="card-text">
+              Feyre regresa a la Corte Primavera con nuevos poderes y un pacto oscuro con Rhysand.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-primary w-100 bg-1">Agregar libro</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 bg-2">
+          <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/c5/f3/c5f323f53cc5a1412b8b195288148db8.jpg"
+            class="card-img-top" alt="Una corte de alas y ruina">
+          <div class="card-body">
+            <h5 class="card-title">Una corte de alas y ruina</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Sarah J. Maas</h6>
+            <p class="card-text">
+              Feyre debe infiltrarse en la Corte Primavera y desentrañar conspiraciones que amenazan Prythian.
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-primary w-100 bg-1">Agregar libro</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-
-  <div class="catalogo">
-    <section class="cards">
-      <div class="card">
-        <h3>El guardían entre el centeno</h3>
-        <p class="autor">J.D Sallinger</p>
-        <img class="img__card" src="https://m.media-amazon.com/images/I/81-9li0FuwL._SL1500_.jpg"
-          alt="Guardían entre el centeno" height="400px" />
-        <p class="descripcion">La historia de Holden Caulfield, un joven que narra sus experiencias y conflictos tras
-          ser expulsado de su escuela.</p>
-        <button class="btn-agregar">Agregar libro</button>
-      </div>
-    </section>
-
-    <section class="cards">
-      <div class="card">
-        <h3>Fight club</h3>
-        <p class="autor">Chuck Palahniuk</p>
-        <img class="img__card" src="https://u-mercari-images.mercdn.net/photos/m30412987278_2.jpg" alt="Fight Club"
-          height="400px" />
-        <p class="descripcion">Un hombre insomne y desencantado funda un club secreto de peleas como forma de rebelión
-          contra la sociedad moderna.</p>
-        <button class="btn-agregar">Agregar libro</button>
-      </div>
-    </section>
-
-    <section class="cards">
-      <div class="card">
-        <h3>El hombre y sus símbolos</h3>
-        <p class="autor"> Carl Gustav Jung</p>
-        <img class="img__card" src="https://m.media-amazon.com/images/I/810RavjOUrL._SL1500_.jpg"
-          alt="El hombre y sus símbolos" height="400px" width="300px" />
-        <p class="descripcion">Una introducción accesible a la psicología de los símbolos y el inconsciente, escrita por
-          Jung y sus colaboradores.</p>
-        <button class="btn-agregar">Agregar libro</button>
-      </div>
-    </section>
-    <section class="cards">
-      <div class="card">
-        <h3>El arte de la guerra</h3>
-        <p class="autor">Sun Tzu</p>
-        <img class="img__card" src="https://pictures.abebooks.com/inventory/30188708710.jpg" alt="El arte de la guerra"
-          height="400px" />
-        <p class="descripcion">Antiguo tratado chino sobre estrategia militar y tácticas aplicables también a la vida y
-          los negocios.</p>
-        <button class="btn-agregar">Agregar libro</button>
-      </div>
-
-    </section>
-    <section class="cards">
-      <div class="card">
-        <h3>El principito</h3>
-        <p class="autor">Antoine de Saint-Exupéry</p>
-        <img class="img__card"
-          src="https://static.zarahome.net/assets/public/795b/018f/e8344b7588b6/321d1d6df0e8/48635052999-a7/48635052999-a7.jpg?ts=1731677199220&f=auto&w=819"
-          alt="El principito" height="400px" width="300px" />
-        <p class="descripcion">Un cuento poético sobre un pequeño príncipe que viaja por distintos planetas y reflexiona
-          sobre la vida y la amistad.</p>
-        <button class="btn-agregar">Agregar libro</button>
-      </div>
-
-    </section>
-    <section class="cards">
-      <div class="card">
-        <h3>El alquimista</h3>
-        <p class="autor">Paulo Coelho</p>
-        <img class="img__card"
-          src="https://cloud10.todocoleccion.online/libros-segunda-mano/tc/2021/05/05/20/261273695.webp"
-          alt="El alquimista" height="400px" width="300px" />
-        <p class="descripcion">La travesía de Santiago, un joven pastor andaluz, en busca de su leyenda personal y el
-          significado de sus sueños.</p>
-        <button class="btn-agregar">Agregar libro</button>
-      </div>
-    </section>
-
-    <section class="cards">
-      <div class="card">
-        <h3>Alas de sangre</h3>
-        <p class="autor">Rebbeca Yarros</p>
-        <img class="img__card"
-          src="https://www.megalibros.cl/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/a/l/alas_de_sangre.jpg"
-          alt="Alas de sangre" height="400px" width="300px" />
-        <p class="descripcion">Una joven debe sobrevivir a una brutal academia militar de jinetes de dragones,
-          enfrentando desafíos, traiciones y secretos en un mundo de fantasía.</p>
-        <button class="btn-agregar">Agregar libro</button>
-      </div>
-    </section>
-
-    </section>
-    <section class="cards">
-      <div class="card">
-        <h3>Alas de hierro</h3>
-        <p class="autor">Rebecca Yarros</p>
-        <img class="img__card"
-          src="https://damemimanga.cl/sitio-web/wp-content/uploads/2025/01/foto-tienda-2025-01-27T183931.107.jpg"
-          alt="El alquimista" height="400px" width="300px" />
-        <p class="descripcion">Secuela de "Alas de sangre", sigue a Violet en su lucha por sobrevivir y descubrir la
-          verdad en la academia de jinetes de dragones, enfrentando nuevos retos y traiciones.</p>
-        <button class="btn-agregar">Agregar libro</button>
-      </div>
-    </section>
-
-    </section>
-    <section class="cards">
-      <div class="card">
-        <h3>Alas de ónix</h3>
-        <p class="autor">Rebecca Yarros</p>
-        <img class="img__card" src="https://http2.mlstatic.com/D_NQ_NP_2X_885550-MLV81920527160_012025-F.webp"
-          alt="Alas de ónix" height="400px" width="300px" />
-        <p class="descripcion">Secuela de "Alas de sangre", sigue a Violet en su lucha por sobrevivir y descubrir la
-          verdad en la academia de jinetes de dragones, enfrentando nuevos retos y traiciones.</p>
-        <button class="btn-agregar">Agregar libro</button>
-      </div>
-    </section>
-
-    </section>
-    <section class="cards">
-      <div class="card">
-        <h3>Una corte de rosas y espinas.</h3>
-        <p class="autor">Sarah J. Maas</p>
-        <img class="img__card"
-          src="https://www.contalles.es/wp-content/uploads/2024/03/una-corte-de-rosas-y-espinas-ed-especial-contalles-benidorm.jpg"
-          alt="una-corte-de-rosas-y-espinas-ed-especial-contalles-benidorm" height="400px" width="300px" />
-        <p class="descripcion">Un cuento de hadas nunca había sido tan sexy. ¡Déjate seducir por la saga del momento!
-          (Libro 1) Cuando la cazadora Feyre mata a un lobo en el bosque, una criatura bestial irrumpe en su casa para
-          exigir una compensación</p>
-        <button class="btn-agregar">Agregar libro</button>
-      </div>
-    </section>
-
-    </section>
-    <section class="cards">
-      <div class="card">
-        <h3>Una Corte de Niebla y Furia.</h3>
-        <p class="autor">Sarah J. Maas</p>
-        <img class="img__card"
-          src="https://images.cdn2.buscalibre.com/fit-in/360x360/19/4b/194bdcb66deb24d793e4b85cd8d3a5bf.jpg"
-          alt="Una corte de Niebla y Furia" height="400px" width="300px" />
-        <p class="descripcion">Tras haber superado más pruebas de las que un corazón humano puede soportar, Feyre
-          regresa a la Corte Primavera con los poderes de una alta fae. Sin embargo, no consigue olvidar los crímenes
-          que se vio obligada a cometer para salvar a Tamlin y a su pueblo, ni el perverso pacto que forjó con Rhysand,
-          el alto lord de la temible Corte Noche</p>
-        <button class="btn-agregar">Agregar libro</button>
-      </div>
-    </section>
-
-    </section>
-    <section class="cards">
-      <div class="card">
-        <h3>Una Corte de Alas y Ruina.</h3>
-        <p class="autor">Sarah J. Maas</p>
-        <img class="img__card"
-          src="https://images.cdn3.buscalibre.com/fit-in/360x360/c5/f3/c5f323f53cc5a1412b8b195288148db8.jpg"
-          alt="una-corte-de-rosas-y-espinas-ed-especial-contalles-benidorm" height="400px" width="300px" />
-        <p class="descripcion">Feyre regresa a la Corte Primavera, decidida a reunir información sobre los planes de
-          Tamlin y del rey invasor que amenaza con destruir Prythian. Para esto deberá formar parte de un peligroso, e
-          incluso letal, juego de engaño. Un juego en el que un simple error podría condenar no solo a Feyre sino
-          también a todo el mundo a su alrededor.</p>
-        <button class="btn-agregar">Agregar libro</button>
-      </div>
-    </section>
-
-  </div>
+  <!--fin catalogo-->
   <!--footer bootstrap-->
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top bg-1">
     <div class="col-md-4 d-flex align-items-center"> <a href="/"
         class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> <svg class="bi"
           width="30" height="24" aria-hidden="true">
           <use xlink:href="#bootstrap"></use>
-        </svg> </a> <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2025 Te lo Vendo. Todos los derechos
-        reservados</span> </div>
+        </svg> </a> <span class="mb-3 mb-md-0 text-body-secondary"><strong>&copy; 2025 Te lo Vendo. Todos los
+          derechos
+          reservados</strong></span> </div>
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex px-4">
       <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><img width="50" height="50"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/500px-Instagram_icon.png"
@@ -240,10 +287,9 @@
             src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" /></a></li>
     </ul>
   </footer>
-
-  <!-- Bootstrap 5 JS Bundle (Popper + JS) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-qQ2aOSjW+Nm6r1i0G0lBTIXf98IURcHLB8z5z8R9F2UO/YKtHn8BA1gZB9sBd7xM"
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
 </body>
 

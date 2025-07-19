@@ -12,45 +12,45 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet" />
   <!--hoja de estilos personalizada-->
-  <link rel="stylesheet" href="./assets/style/main.cs">
+  <link rel="stylesheet" href="./assets/style/custom.css">
 
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-3">
-  <div class="container-fluid">
-    <!-- Marca o logo -->
-    <a class="navbar-brand fw-bold text-uppercase" href="#">TeLoVendo</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-3 bg-1">
+    <div class="container-fluid">
+      <!-- Marca o logo -->
+      <a class="navbar-brand fw-bold text-uppercase" href="#">TeLoVendo</a>
 
-    <!-- Botón hamburguesa para móviles y tablets -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Mostrar navegación">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Botón hamburguesa para móviles y tablets -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Mostrar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Menú colapsable -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./catalogo.html">Catálogo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./ficha.html">Fichas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./index.html#news">Novedades</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./aboutus.html">Nosotros</a>
-        </li>
-      </ul>
+      <!-- Menú colapsable -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./catalogo.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./ficha.html">Fichas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#news">Novedades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./aboutus.html">Nosotros</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
   <!--fin navbar-->
   <header>
     <!--hero seccion-->
@@ -65,8 +65,10 @@
             fácil
             de usar, segura y pensada para que vivas la mejor experiencia de compra literaria.</p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> <button type="button"
-              class="btn btn-primary btn-lg px-4 gap-3 bg-1">Contacto</button> <button type="button"
-              class="btn btn-primary btn-lg px-4 bg-1">Sobre Nosotros</button> </div>
+              class="btn btn-primary btn-lg px-4 gap-3 bg-1" onclick="location.href='#contact'">Contacto</button>
+            <button type="button" class="btn btn-primary btn-lg px-4 bg-1"
+              onclick="location.href='./aboutus.html'">Sobre Nosotros</button>
+          </div>
         </div>
       </div>
     </div>
@@ -138,32 +140,32 @@
       </div>
     </div>
   </section>
-   <!-- Modal de confirmación -->
-<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header bg-success text-white">
-        <h5 class="modal-title" id="successModalLabel">Formulario enviado</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body text-center">
-        ¡Guardado exitosamente!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+  <!-- Modal de confirmación -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title" id="successModalLabel">Formulario enviado</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center">
+          ¡Guardado exitosamente!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
   <script>
-  const form = document.querySelector("form");
-  form.addEventListener("submit", function (e) {
-    e.preventDefault(); // Evita que se recargue la página
-    const modal = new bootstrap.Modal(document.getElementById("successModal"));
-    modal.show();
-    form.reset(); // Opcional: limpia el formulario
-  });
-</script>
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Evita que se recargue la página
+      const modal = new bootstrap.Modal(document.getElementById("successModal"));
+      modal.show();
+      form.reset(); // Opcional: limpia el formulario
+    });
+  </script>
 
   <!--footer bootstrap-->
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top bg-1">
