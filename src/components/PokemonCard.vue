@@ -11,10 +11,15 @@
 
 <script>
 export default {
-  props: { pokemon: { type: Object, required: true } },
+  props: {
+    pokemon: { type: Object, required: true },
+    // optional image prop can override computed image
+    image: { type: String, default: '' }
+  },
   computed: {
-    image() {
-      return this.pokemon?.sprites?.other?.['official-artwork']?.front_default || this.pokemon?.sprites?.front_default || ''
+    // prefer external `image` prop (from parent computed) if provided
+    imageSrc() {
+      return this.image || this.pokemon?.sprites?.other?.['official-artwork']?.front_default || this.pokemon?.sprites?.front_default || ''
     },
     tipos() {
       return (this.pokemon?.types || []).map(t => t.type.name)

@@ -24,8 +24,7 @@
 </template>
 
 <script>
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth'
-import { auth } from '../firebase'
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword, firebaseConfigured } from '../firebase'
 
 export default {
   name: 'Login',
@@ -46,11 +45,15 @@ export default {
       return ''
     },
     async login() {
+      if (!firebaseConfigured) {
+        this.error = 'Firebase no está configurado. Añade las variables VITE_FIREBASE_* en un archivo .env en la raíz del proyecto.'
+        return
+      }
       this.error = this.validar()
       if (this.error) return
       this.loading = true
       try {
-        await signInWithEmailAndPassword(auth, this.email, this.password)
+        await signInWithEmailAndPassword(this.email, this.password)
         this.$router.push({ name: 'Home' })
       } catch (err) {
         this.error = 'Credenciales incorrectas o usuario no registrado.'
@@ -59,11 +62,15 @@ export default {
       }
     },
     async register() {
+      if (!firebaseConfigured) {
+        this.error = 'Firebase no está configurado. Añade las variables VITE_FIREBASE_* en un archivo .env en la raíz del proyecto.'
+        return
+      }
       this.error = this.validar()
       if (this.error) return
       this.loading = true
       try {
-        await createUserWithEmailAndPassword(auth, this.email, this.password)
+        await createUserWithEmailAndPassword(this.email, this.password)
         this.$router.push({ name: 'Home' })
       } catch (err) {
         if (err.code === 'auth/email-already-in-use')

@@ -2,15 +2,20 @@
   "name": "abp2-m7",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.3.4"
+    "axios": "^1.13.0",
+    "firebase": "^12.4.0",
+    "vue": "^3.3.4",
+    "vue-router": "^4.6.3"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
     "vite": "^5.1.0"
   }
 }

@@ -35,7 +35,7 @@
     </div>
 
     <div v-if="pokemon" style="margin-top:20px;">
-      <PokemonCard :pokemon="pokemon" />
+      <PokemonCard :pokemon="pokemon" :image="photo" />
       <div style="display:flex;gap:24px;margin-top:16px;">
         <div>
           <h4>Movimientos ({{ moves.length }})</h4>
@@ -53,8 +53,7 @@
 <script>
 import axios from 'axios'
 import PokemonCard from '../components/PokemonCard.vue'
-import { signOut } from 'firebase/auth'
-import { auth } from '../firebase'
+import { signOut } from '../firebase'
 
 export default {
   name: 'Home',
@@ -74,6 +73,10 @@ export default {
     },
     abilities() {
       return this.pokemon?.abilities?.map(a => a.ability.name) || []
+    }
+    ,
+    photo() {
+      return this.pokemon?.sprites?.other?.['official-artwork']?.front_default || this.pokemon?.sprites?.front_default || ''
     }
   },
   created() {
@@ -112,7 +115,7 @@ export default {
       this.buscar()
     },
     async logout() {
-      await signOut(auth)
+      await signOut()
       this.$router.push({ name: 'Login' })
     }
   }
