@@ -1,6 +1,2 @@
 .github/workflows/firebase-hosting-merge.yml
 .github/workflows/firebase-hosting-pull-request.yml
-
-node_modules/
-
-.DS_Store
