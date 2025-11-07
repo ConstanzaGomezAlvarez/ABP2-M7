@@ -1,0 +1,4 @@
+/* styles básicos */
+body { background:#fafafa; color:#222; padding:12px; }
+button { cursor:pointer; }
+input { padding:6px; margin:4px 0; }
